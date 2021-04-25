@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1020px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 body {
     background-color: #282828;
 }
@@ -21,7 +28,7 @@ nav {
 }
 
 .search-btn {
-    background-color: #333;
+    background-color: #393939;
     border: none;
 }
 
@@ -220,6 +227,14 @@ figcaption {
     left: 0;
 }
 
+.likes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    border-bottom: 2px solid #aaa;
+}
+
 /* comments */
 .comments {
     width: 61vw;
@@ -233,14 +248,14 @@ figcaption {
 }
 
 .add-comment {
-    height: 20vh;
+    height: 10vh;
     display: flex;
 }
 
 .comment-profile {
     border-radius: 50%;
     width: 5%;
-    height: 32%;
+    height: 64%;
 }
 
 .comment-input {
@@ -272,3 +287,50 @@ input[type=text] {
 button:hover, input:hover, img:hover {
     cursor: pointer;
 }
+
+.random-comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 40vw;
+    margin-bottom: 4vh;
+}
+
+.comment-user p {
+    margin: 0 0 0.25rem 0;
+}
+
+.random-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    width: 100%;
+}
+
+.comment-content {
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.thumb-up-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    margin-top: -2vh;
+}
+
+.replies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -3vh;
+}
+
+.random-profile {
+    border-radius: 50%;
+    width: 7.5%;
+    height: 40%;
+}
+
