@@ -118,6 +118,10 @@ main {
     margin: 1.5vh auto;
 }
 
+aside {
+    margin-left: 2vw;
+}
+
 .other-vids-img {
     margin-right: 0.5vw;
     width: 50%;
@@ -145,18 +149,21 @@ aside {
 }
 
 figcaption {
-    margin-left: 3vw;
+    margin-top: 2vh;
+    height: 4vh;
 }
 
 /* video description */
+.video {
+    margin-left: 5vw;
+}
+
 .video-info {
     width: 61vw;
-    margin-left: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 0.8rem;
-    margin-top: -3vh;
     color: #aaa
 }
 
@@ -170,10 +177,11 @@ figcaption {
     width: 40%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .video-profile {
-    margin-top: 1vh;
+    margin-top: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -221,10 +229,15 @@ figcaption {
 }
 
 .desc {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
     width: 50vw;
-    margin-left: 6.25vw;
     word-wrap: break-word;
-    left: 0;
+    font-size: 0.95rem;
+}
+
+.show-more {
+    margin-top: 2vh;
 }
 
 .likes {
@@ -233,12 +246,13 @@ figcaption {
     justify-content: space-between;
     width: 40%;
     border-bottom: 2px solid #aaa;
+    align-items: center;
 }
 
 /* comments */
 .comments {
+    margin-top: 4vh;
     width: 61vw;
-    margin-left: 3vw;
 }
 
 .comments-info {
@@ -274,7 +288,6 @@ input[type=text] {
 }
 
 .add-border {
-    margin-left: 3vw;
     width: 61vw;
     flex-grow: 1;
     align-self: self-start;
@@ -293,7 +306,8 @@ button:hover, input:hover, img:hover {
     flex-direction: row;
     justify-content: flex-start;
     width: 40vw;
-    margin-bottom: 4vh;
+    margin-bottom: 6vh;
+    font-size: 0.9rem;
 }
 
 .comment-user p {
@@ -318,14 +332,15 @@ button:hover, input:hover, img:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 30%;
-    margin-top: -2vh;
+    align-items: center;
+    margin-top: 1vh;
 }
 
 .replies {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -3vh;
+    align-items: center;
 }
 
 .random-profile {
